@@ -1,0 +1,57 @@
+.heading {
+  position: relative;
+  color: #fff;
+  background-color: $color-primary;
+  text-align: center;
+  padding-bottom: 8rem;
+  margin-bottom: 10rem;
+  animation: ace 0.3s;
+
+  &-nav-bar {
+    font-size: 1.5rem;
+    padding: 4rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-weight: lighter;
+      color: #e7e4e4;
+    }
+    h2:last-child {
+      font-weight: normal;
+      padding-bottom: 0.05rem;
+      border-bottom: 2px solid $color-secondary;
+    }
+  }
+  &-text {
+    font-size: 4.5rem;
+    span {
+      display: block;
+      font-size: 3.5rem;
+    }
+  }
+
+  &-btn {
+    cursor: pointer;
+    margin: 2rem 0;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: $color-secondary;
+    position: relative;
+    z-index: 1;
+    &:hover {
+      background-color: rgb(52, 185, 52);
+    }
+  }
+  &-img {
+    // rotateY(145deg) skewX(7deg)
+    transform: translate(-40%, -10%) rotate3d(100, -1, -100, 310deg)
+      rotatey(133deg);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: 3rem;
+    height: 39rem;
+  }
+}
+
+// styling the heading part of the page

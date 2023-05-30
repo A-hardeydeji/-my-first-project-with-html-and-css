@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 57em) {
+    html {
+      font-size: 55%; } }
+  @media only screen and (max-width: 26em) {
+    html {
+      font-size: 30%; } }
+
+body {
+  box-sizing: border-box; }
+
+.man-img {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  transform: translate(0, -8rem); }
+  @media only screen and (max-width: 57em) {
+    .man-img {
+      width: 25rem;
+      height: 25rem; } }
+  @media only screen and (max-width: 45em) {
+    .man-img {
+      transform: translate(0, 5rem); } }
+
+.container {
+  color: #fff;
+  padding: 4rem 6rem;
+  background-color: #651aab;
+  max-width: 35vw;
+  transform: translate(-7rem, 0); }
+  @media only screen and (max-width: 77em) {
+    .container {
+      max-width: 45vw; } }
+  @media only screen and (max-width: 64em) {
+    .container {
+      max-width: 55vw; } }
+  @media only screen and (max-width: 57em) {
+    .container {
+      padding: 2rem 3rem;
+      max-width: 60vw; } }
+  @media only screen and (max-width: 45em) {
+    .container {
+      transform: translate(0rem, 0);
+      text-align: center; } }
+  .container-text {
+    margin-bottom: 2rem;
+    font-size: 3.5rem; }
+  .container-paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5; }
+    @media only screen and (max-width: 45em) {
+      .container-paragraph {
+        line-height: 2; } }
+  .container-btn {
+    cursor: pointer;
+    border: none;
+    background-color: #2bdc2b;
+    padding: 1rem 2.5rem;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 57em) {
+      .container-btn {
+        margin-bottom: 1rem; } }
+    .container-btn:hover {
+      background-color: #34b934; }
+
+.aside-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25rem 0 10rem 0; }
+  @media only screen and (max-width: 45em) {
+    .aside-section {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5rem; } }
+
+footer {
+  font-size: 1.5rem;
+  text-align: center; }
+
+.icon {
+  font-size: 3rem;
+  margin: 2rem 1rem; }
+
+.heading {
+  position: relative;
+  color: #fff;
+  background-color: #651aab;
+  text-align: center;
+  padding-bottom: 8rem;
+  margin-bottom: 10rem;
+  animation: ace 0.3s; }
+  .heading-nav-bar {
+    font-size: 1.5rem;
+    padding: 4rem 8rem;
+    display: flex;
+    justify-content: space-between; }
+    .heading-nav-bar span {
+      font-weight: lighter;
+      color: #e7e4e4; }
+    .heading-nav-bar h2:last-child {
+      font-weight: normal;
+      padding-bottom: 0.05rem;
+      border-bottom: 2px solid #2bdc2b; }
+  .heading-text {
+    font-size: 4.5rem; }
+    .heading-text span {
+      display: block;
+      font-size: 3.5rem; }
+  .heading-btn {
+    cursor: pointer;
+    margin: 2rem 0;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: #2bdc2b;
+    position: relative;
+    z-index: 1; }
+    .heading-btn:hover {
+      background-color: #34b934; }
+  .heading-img {
+    transform: translate(-40%, -10%) rotate3d(100, -1, -100, 310deg) rotatey(133deg);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: 3rem;
+    height: 39rem; }
+
+.main {
+  gap: 4rem;
+  padding: 3rem 6rem;
+  margin-top: 20rem;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  @media only screen and (max-width: 45em) {
+    .main {
+      display: grid;
+      justify-content: center; } }
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 30rem; }
+    @media only screen and (max-width: 45em) {
+      .main-container {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        max-width: 40rem; } }
+    @media only screen and (max-width: 26em) {
+      .main-container {
+        flex-direction: column; } }
+  .main-number {
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 50%;
+    border: 0.1px solid #4b4b4bbb;
+    margin-bottom: 2rem;
+    flex-shrink: 0; }
+  .main-text {
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 45em) {
+      .main-text {
+        display: flex; } }
+    @media only screen and (max-width: 26em) {
+      .main-text {
+        flex-direction: column; } }
+  .main-paragraph {
+    font-size: 1.8rem; }
+    @media only screen and (max-width: 45em) {
+      .main-paragraph {
+        text-align: left; } }
+    @media only screen and (max-width: 26em) {
+      .main-paragraph {
+        text-align: center; } }

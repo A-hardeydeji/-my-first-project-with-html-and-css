@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 57em) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: 26em) {
+    font-size: 30%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  // background-color: $color-primary;
+}
+
+// styling the main part of the page
+
+.man-img {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  transform: translate(0, -8rem);
+  @media only screen and (max-width: 57em) {
+    width: 25rem;
+    height: 25rem;
+  }
+  @media only screen and (max-width: 45em) {
+    transform: translate(0, 5rem);
+  }
+}
+
+.container {
+  color: #fff;
+  padding: 4rem 6rem;
+  background-color: $color-primary;
+  max-width: 35vw;
+  transform: translate(-7rem, 0);
+  @media only screen and (max-width: 77em) {
+    max-width: 45vw;
+  }
+  @media only screen and (max-width: 64em) {
+    max-width: 55vw;
+  }
+  @media only screen and (max-width: 57em) {
+    padding: 2rem 3rem;
+    max-width: 60vw;
+  }
+  @media only screen and (max-width: 45em) {
+    transform: translate(0rem, 0);
+    text-align: center;
+  }
+  &-text {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+  }
+  &-paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    @media only screen and (max-width: 45em) {
+      line-height: 2;
+    }
+  }
+  &-btn {
+    cursor: pointer;
+    border: none;
+    background-color: $color-secondary;
+    padding: 1rem 2.5rem;
+    margin-bottom: 2rem;
+    @media only screen and (max-width: 57em) {
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      background-color: rgb(52, 185, 52);
+    }
+  }
+}
+
+.aside-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25rem 0 10rem 0;
+  @media only screen and (max-width: 45em) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+}
+
+footer {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.icon {
+  font-size: 3rem;
+  margin: 2rem 1rem;
+}
